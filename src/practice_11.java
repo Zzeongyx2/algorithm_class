@@ -8,16 +8,16 @@ public class practice_11 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("숫자 6개를 입력하세요 : ");
+            System.out.println("숫자 6개를 입력하세요 : ");
 
-        for(int i=0; i<arr.length; i++){
-            arr[i] = scan.nextInt();
-        }
+            for(int i=0; i<arr.length; i++){
+                arr[i] = scan.nextInt();
+            }
 
-        System.out.println("누적합 : ");
+            System.out.println("누적합 : ");
 
-        for(int i =0; i<arr.length; i++){
-            System.out.println(SumFunction(i));
+            for(int i =0; i<arr.length; i++){
+                System.out.println(SumFunction(i));
         }
     }
 

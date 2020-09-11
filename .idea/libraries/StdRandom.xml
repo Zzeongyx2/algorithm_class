@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="StdRandom">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/StdRandom.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
