@@ -25,6 +25,7 @@ public class Fibonacci {
 
         long afterTime = System.currentTimeMillis();        //종료 시각
         double secDiffTime = (afterTime - beforeTime)/1000.0;   //연산 시간 계산
+
         System.out.println("연산시간 : " + secDiffTime);
     }
 }

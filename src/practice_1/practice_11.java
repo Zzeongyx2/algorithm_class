@@ -16,7 +16,7 @@ public class practice_11 {
                 arr[i] = scan.nextInt();
             }
 
-            System.out.println("누적합 : ");
+            System.out.println("누적합 = ");
 
             for(int i =0; i<arr.length; i++){
                 System.out.println(SumFunction(i));
