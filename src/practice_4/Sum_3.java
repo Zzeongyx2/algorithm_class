@@ -18,19 +18,16 @@ public class Sum_3 {
             arr[i] = scan.nextInt();
         }
 
-        Arrays.sort(arr);
+        sort(arr);
 
-        System.out.print("오름차순으로 정렬된 배열 : ");
-
-        for(int i=0;i<arr.length;i++) {
-            System.out.print(arr[i] + " ");
-        }
 
         for(int i=0;i<arr.length-2;i++){
             for(int j=i+1;j<arr.length-1;j++){
-                sum_2 = (arr[i] + arr[j])*(-1) ;
-                if(binarySearch(arr, sum_2)>j){
+                sum_2 = (arr[i] + arr[j])*(-1);
+                int bs = binarySearch(arr,sum_2);
+                if(bs > j){
                     cnt++;
+                    System.out.println(arr[i] + " " + arr[j] + " " + arr[bs]);
                 }
             }
         }
@@ -54,5 +51,21 @@ public class Sum_3 {
             }
         }
         return -1;
+    }
+
+    private static void sort(int []a){      //selection sort
+
+        for(int i=0; i<a.length; i++){
+            int min = i;
+            for(int j=i+1; j<a.length;j++){
+                if(a[j]< a[min]){
+                    min = j;
+                }
+            }
+            int temp;
+            temp = a[i];
+            a[i] = a[min];
+            a[min] = temp;
+        }
     }
 }
