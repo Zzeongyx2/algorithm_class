@@ -38,9 +38,6 @@ public class MergeSort <T extends Comparable<T>> {
         arr[j] = temp;
     }
 
-    private boolean isSorted(T[] a) {
-        return isSorted(a, 0, a.length - 1);
-    }
 
     private boolean isSorted(T[] a, int lo, int hi) {
         for (int i = lo + 1; i <= hi; i++) {

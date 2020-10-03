@@ -2,16 +2,15 @@ package practice_5;
 
 public class sortMain {
     public static void main(String[] args) {
-        Integer[] a = {1,3,5,4};
         Integer[] arr = {7,3,2,16,24,4,11,9};
         Integer[] aux = new Integer[arr.length];
 
 
         InsectionSort<Integer> insectionSort = new InsectionSort<Integer>();
 
-        insectionSort.sort(a);
+        insectionSort.sort(arr);
         System.out.println("Insection sort : ");
-        insectionSort.show(a);
+        insectionSort.show(arr);
 
         MergeSort mergeSort = new MergeSort();
 
