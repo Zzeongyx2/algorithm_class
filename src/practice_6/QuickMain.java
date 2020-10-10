@@ -43,7 +43,7 @@ public class QuickMain {
         Integer boundaryValue = arr[boundaryIndex];
 
         Set<Integer> expected = new HashSet<Integer>();
-        Collections.addAll(expected, boundaryIndex+1);
+        Collections.addAll(expected, boundaryValue);
 
         Set<Integer> actual = new HashSet<Integer>();
         for(int i=boundaryIndex; i<aux.length; i++){
