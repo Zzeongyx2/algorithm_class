@@ -50,7 +50,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
         }
         public Item next(){
             return a[--i];
-        }
+        } 
         public void remove(){
 
         }
