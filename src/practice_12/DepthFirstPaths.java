@@ -16,15 +16,8 @@ public class DepthFirstPaths {
     }
 
     private void dfs(Graph G, int v){
-//        marked[v] =true;
-//        for(int w : G.adj(v)){
-//            if(!marked[w]){
-//                edgeTo[w] = v;
-//                dfs(G, w);
-//            }
-//        }
         marked[v] = true;
-    System.out.print(v + " ");
+        System.out.print(v + " ");
         Iterator<Integer> i = G.adj(v).iterator();
         while (i.hasNext()) {
             int n = i.next();
